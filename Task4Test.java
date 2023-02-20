@@ -6,7 +6,7 @@ import java.util.stream.Stream;
 
 public class Task4Test {
     public static void main(String[] args) {
-        generatorNumber(25214903L, 11, 2 ^ 48L);
+        generatorNumber(25214903L, 11, (long)Math.pow(2,48));
 
     }
 

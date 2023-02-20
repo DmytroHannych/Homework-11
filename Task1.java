@@ -12,7 +12,7 @@ public class Task1 {
         List<String> nameStream = IntStream
                 .range(0, names.size())
                 .filter(i -> i % 2 !=0)
-                .mapToObj(i -> names.get(i))
+                .mapToObj(i -> i + ". " + names.get(i))
                 .collect(Collectors.toList());
         System.out.println(nameStream);
     }
